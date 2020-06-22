@@ -1,0 +1,711 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    src:url('../fonts/MetalMania-Regular.ttf');
+    font-family: MetalMania;
+}
+body{
+    overflow-x: hidden;
+}
+/**************Styling header starts here***************/
+header{
+    background-color: rgb(224, 224, 224);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 80px
+}
+
+header .logo{
+   width: 400px;
+   height: 100%;
+   text-align: center;
+}
+header .logo h1{
+    position: absolute;
+    top: 22px;
+    left: 160px;
+    color: #523d3d;
+
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+header .logo span{
+    color: orangered;
+}
+header ul{
+    list-style: none;
+    position: absolute;
+    left: 680px;
+    bottom: 30px;
+}
+header ul li{
+    display: inline-block;
+
+}
+header ul li a{
+    color: rgb(32, 31, 31);
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 20px;
+    transition: 2s;
+}
+header ul li a.active{
+    background-color: red;
+}
+header ul li a:hover{
+    background-color: orangered;
+    color: #ffffff;
+}
+
+/**************Styling nav starts here***************/
+nav{
+    height: 570px;
+    position: relative;
+}
+.opacity{
+    background-color: rgb(66, 65, 65);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.7;
+}
+nav h4{
+    color: white;
+    position: absolute;
+    top:210px;
+    left: 465px;
+    font-size: 26px;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+nav h1{
+    color:#ffffff;
+    position: absolute;
+    top: 260px;
+    left: 170px;
+    font-size: 85px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav h1 span{
+    color: orangered;
+}
+nav button{
+    position: relative;
+    top: 390px;
+    left: 570px;
+    width: 200px;
+    height: 48px;
+    font-size: 20px;
+    background-color: rgb(238, 78, 20);
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+video {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+
+
+/**************Styling container starts here***************/
+.container{
+    height: 800px;
+   /* background-color: blue;*/
+    position: relative;
+}
+.container .Program{
+  /*  background-color: red;*/
+    width: 520px;
+    height: 170px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    position: relative;
+}
+.container .Program h2{
+    position: absolute;
+    top: 3%;
+    left: 18%;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.container .Program h2 span{
+    color: orangered;
+}
+.container .Program img{
+    position: absolute;
+    top: 35%;
+    left: 43%;
+}
+.container .Program p{
+    text-align-last: center;
+    position: absolute;
+    top: 52%;
+    left: 5%;
+}
+
+
+.content{
+   /* background-color: green;*/
+    width: 90%;
+    height: 500px;
+    position: absolute;
+    top: 37%;
+    left: 5%;
+    display: grid;
+  grid-template-columns: 700px 700px;
+}
+.content > div{
+    width: 550px;
+    height: 100px;
+   /* background-color: darkgoldenrod;*/
+}
+.p1 ,.p3 ,.p5{
+    position: relative;
+    left: 23px;
+    top: 29px;
+}
+.p2 , .p4 ,.p6{
+    position: relative;
+    right: 60px;
+    top: 29px;
+}
+.p3 , .p4{
+    position: relative;
+    top: -5%;
+}
+.p5 , .p6{
+    position: relative;
+    top: -28%;
+}
+.p1 h2 , .p2 h2 , .p4 h2 , .p5 h2 ,.p6 h2 ,.p3 h2{
+    margin-left: 21%;
+    margin-top: -18%;
+}
+.p1 p ,.p2 p , .p4 p , .p5 p ,.p6 p ,.p3 p{
+    width: 500px;
+    margin-left: 21%;
+}
+.p1 a , .p2 a , .p4 a , .p5 a ,.p6 a ,.p3 a{
+    color: red;
+    margin-left: 21%;
+    line-height: 24px;
+}
+
+
+/************************become a memeber*************************/
+.memeber{
+   height: 360px;
+   width: 100%;
+   background-image: url('../images/cta-bg.jpg');
+}
+.memeber h1{
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 27%;
+    line-height: 330px;
+}
+.memeber h1 span{
+    color: orangered;
+}
+.memeber p{
+    text-align: center;
+    font-size: 25px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -9%;
+    color:white;
+}
+.memeber button{
+    background-color: orangered;
+    width: 160px;
+    height: 45px;
+    margin-left: 44%;
+    margin-top: 2%;
+    font-size: 17px;
+    color: #ffffff;
+    border: solid 1px orangered;
+    transition: .9s;
+    position: relative;
+    z-index: 1;
+}
+.memeber button::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: red;
+    transition: .9s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+}
+.memeber button:hover:before{
+    transition: .9s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/************************our_classes a memeber*************************/
+.our_classes{
+    width: 100%;
+    height: 990px;
+  /* background-color: crimson;*/
+    position: relative;
+}
+.our_classes .Program{
+      
+      width: 520px;
+      height: 170px;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -30%);
+      position: relative;
+  }
+  .our_classes .Program h2{
+      position: absolute;
+      top: 3%;
+      left: 24%;
+      font-size: 36px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 5px;
+  }
+  .our_classes .Program h2 span{
+      color: orangered;
+      letter-spacing: 0;
+  }
+  .our_classes .Program img{
+      position: absolute;
+      top: 35%;
+      left: 43%;
+  }
+  .our_classes .Program p{
+      text-align-last: center;
+      position: absolute;
+      top: 52%;
+      left: 5%;
+  }
+
+  .trainin{
+    /*  background-color:cyan ;*/
+      width: 30%;
+      height: 60%;
+      position: absolute;
+      top: 35%;
+      left: 8%;
+      
+  }
+  .trainin > div{
+      widows: 90%;
+      height: 100px;
+      background-color: rgb(163, 163, 228);
+      background-color:#00A4ccff;
+      margin: 15px;
+      transform: translate(100rem);
+      animation: slidin  .5s forwards;
+      position: relative;
+  }
+  .trainin div::before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: #ED2B33FF;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: all 1s;
+      z-index: -1;
+  }
+  .trainin div:hover:before{
+      transition: all 1s;
+      transform: scale(1);
+      transform-origin: right;
+  }
+  .trainin div:nth-child(5){
+    height: 78px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    text-align: center;
+    line-height: 80px;
+    background-color: rgb(238, 36, 0);
+    color: #ffffff;
+  }
+
+  .trainin  img {
+      width: 50px;
+      position: relative;
+      top: 18px;
+      left: 27px;
+  }
+  .trainin  a{
+     text-decoration: none;
+     font-size: 25px;
+     color: #000000;
+     font-weight: bold;
+     margin-left: 30px;
+     line-height: 100px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+.trainin div:nth-child(1){
+    animation-delay: .5s;
+}
+.trainin div:nth-child(2){
+    animation-delay: 1s;
+}
+.trainin div:nth-child(3){
+    animation-delay: 1.5s;
+}
+.trainin div:nth-child(4){
+    animation-delay: 2s;
+}
+.trainin div:nth-child(5){
+    animation-delay: 2.5s;
+}
+  @keyframes slidin{
+      from{
+        transform: translateX(0);
+      }
+      to{
+          transform: translate(0);
+      }
+  }
+
+  .V_schedules{
+    /*background-color:darkcyan ;*/
+    width: 52%;
+    height: 60%;
+    position: absolute;
+    top: 36.5%;
+    left: 40%;
+    
+}
+  .V_schedules img{
+      width: 100%;
+      height: 45%;
+  }
+  .V_schedules h2{
+      font-size: 30px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+      margin-top: 15px;
+  }
+  .V_schedules p{
+      font-size: 18px;
+      position: relative;
+      top: 10px;
+  }
+  .V_schedules button{
+      height: 50px;
+      width: 160px;
+      background-color: rgb(236, 47, 21);
+      border: orangered 1px solid;
+      position: relative;
+      top: 27px;
+      font-size: 18px;
+      color: #ffffff;
+      
+  }
+
+
+  /************************classes_schedules a memeber*************************/
+  .classes_schedules{
+      width: 100%;
+      height: 1000px;
+      background-color: red;
+      position: relative;
+      background-image: url(../images/schedule-bg.jpg);
+  }
+  .classes_schedules .Program{
+    /*  background-color: red;*/
+      width: 520px;
+      height: 170px;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -30%);
+      position: relative;
+  }
+  .classes_schedules .Program h2{
+      position: absolute;
+      top: 3%;
+      left: 18%;
+      font-size: 36px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: white;
+  }
+  .classes_schedules .Program h2 span{
+      color: orangered;
+  }
+  .classes_schedules .Program img{
+      position: absolute;
+      top: 35%;
+      left: 43%;
+  }
+  .classes_schedules .Program p{
+      text-align-last: center;
+      position: absolute;
+      top: 52%;
+      left: 5%;
+      color:whitesmoke;
+  }
+
+  .days{
+     /* background-color: green;*/
+      width: 60%;
+      height: 30px;
+      position: absolute;
+      left: 19%;top: 35%;
+  }
+  .days a{
+      color: white;
+      padding: 4px 5px;
+      position: relative;
+      left: 23%;
+      font-size: 19px;
+      text-decoration: none;
+      transition: all .9s;
+  }
+  .days a:first-child{
+      color: orangered;
+  }
+  .days a:hover{
+      color: orangered;
+  }
+  .table{
+     /* background-color: blue;*/
+      width: 100%;
+      height: 540px;
+      position: relative;
+      top: 24%;
+  }
+
+  #customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    height: 480px;
+    position: relative;
+    left: 15%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    
+  }
+  th{
+      text-align: center;
+      padding-left: 40px;
+  }
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+   /* background-color: #4CAF50;*/
+   color:whitesmoke;
+  }
+
+  /***********************Expert Trainer*******************************/
+   .exper_trainer{
+    height: 800px;
+    /* background-color: blue;*/
+     position: relative;
+   }
+  .exper_trainer .Program{
+  /*  background-color: red;*/
+    width: 520px;
+    height: 170px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    position: relative;
+    z-index: 1;
+
+}
+.exper_trainer .Program h2{
+    position: absolute;
+    top: 3%;
+    left: 18%;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.exper_trainer .Program h2 span{
+    color: orangered;
+}
+.exper_trainer .Program img{
+    position: absolute;
+    top: 35%;
+    left: 43%;
+}
+.exper_trainer .Program p{
+    text-align-last: center;
+    position: absolute;
+    top: 52%;
+    left: 5%;
+}
+
+ .trainers{
+     width: 100%;
+     height: 600px;
+    /* background-color: brown;*/
+     display: flex;
+     position: relative;
+     top: 10%;
+ }
+ .trainer1 , .trainer2 , .trainer3{
+     display: flex;
+     background-color: rgb(243, 242, 242);
+     width: 350px;
+     height: 490px;
+     position: relative;
+     top: 40px;
+     left: 50px;
+     margin: 32px;
+     box-shadow: 2px 3px 4px black;
+ }
+ .trainer1 img , .trainer2 img , .trainer3 img{
+     width: 77%;
+     height: 45%;
+     border-radius: 5px;
+     position: relative;
+     top: 25px;
+     left: 38px;
+ }
+ .trainer1 a , .trainer2 a , .trainer3 a{
+     height: 30px;
+     position: absolute;
+     top: 55%;
+     left: 11%;
+     text-decoration: none;
+     font-size: 17px;
+ }
+ .trainer1 h2 , .trainer2 h2 , .trainer3 h2{
+    height: 30px;
+    position: absolute;
+    top: 61%;
+    left: 11%;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: 30px;
+}
+.trainer1 p  , .trainer2 p , .trainer3 p{
+    height: 30px;
+    position: absolute;
+    top: 70%;
+    left: 11%;
+    text-decoration: none;
+    font-size: 17px;
+    width: 80%;
+    
+}
+#social{
+    
+    height: 40px;
+    height: 25px;
+    position: relative;
+    top: 90%;
+    left: -70%;
+    margin: 10px;
+}
+
+
+/***************************contact****************************/
+.contact{
+    background-color: orange;
+    width: 100%;
+    height: 500px;
+    margin-top: 70px;
+}
+.contact h2{
+     margin-left: 30px;
+     margin-top: 20px;
+    position: relative;
+    top: 17px;
+    left: 94px;
+}
+.leftside{
+    width: 48%;
+    height: 100%;
+    background-color: red;
+    background-image: url('../images/map.PNG');
+    float: left;
+}
+.rightside{
+    width: 52%;
+    height: 100%;
+    background-color: red;
+    float: right;
+    background-image: url('../images/contact-bg.jpg');
+}
+.form{
+    width: 60%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+    margin-left: 140px;
+}
+.form input{
+    width: 350px;
+    height: 42px;
+    display: block;
+    margin: 30px;
+}
+textarea{
+    width: 350px;
+    height: 100px;
+    margin-left: 29px;
+}
+ .form button{
+    width: 350px;
+    height: 45px;
+    background-color: orangered;
+    margin-top: 20px;
+    margin-left: 27px;
+    font-size: 20px;
+    border: none;
+    letter-spacing: 5px;
+
+}
+
+/***************************footer****************************/
+footer{
+    
+    width: 100%;height: 100px;
+}
+footer label{
+    font-size: 18px;
+    position: relative;
+    left: 30%;
+    top: 40px;
+}
